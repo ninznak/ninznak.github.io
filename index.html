@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пиксельный мир</title>
+    <title>Digital World</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,8 @@
         }
 
         body {
-            background-color: #f0f0f0;
+        /*background-color: #f0f0f0;*/
+            background-color: #dce8cf;
             color: #333;
         }
 
@@ -27,6 +28,13 @@
 
         header h1 {
             font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+            margin: 20px auto; /* auto по бокам + отступы сверху/снизу */
+            padding: 0;
+            width: 100%; /* Занимает всю ширину родителя */
         }
 
         /* Тело страницы */
@@ -34,6 +42,7 @@
             padding: 20px;
             max-width: 1000px;
             margin: 0 auto;
+            padding-bottom: 100px;
         }
 
         .pixel-gallery {
@@ -45,9 +54,11 @@
         }
 
         .pixel-image {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             image-rendering: pixelated;
+            object-fit: cover; /* Вписывает целиком */
+            background-color: #f0f0f0;
             border: 3px solid #333;
             transition: transform 0.3s;
         }
@@ -60,6 +71,7 @@
             background-color: #eef3b8;
             border: 3px solid #333;
             padding: 20px;
+            margin-bottom: 40px;
             max-width: 400px;
             margin: 0 auto;
         }
@@ -106,7 +118,7 @@
             background-color: #91a675;
             color: #fff;
             text-align: center;
-            padding: 15px;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -122,6 +134,18 @@
 <main>
     <div class="pixel-gallery">
         <img src="images/px1.PNG" alt="Pixel1" class="pixel-image">
+        <img src="images/px2.png" alt="Pixel1" class="pixel-image">
+        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
+        <!--<img src="https://placehold.co/150x150/999/fff?text=Pixel+Art+4" alt="Пиксель 4" class="pixel-image">-->
+        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
+        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
+        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
+    </div>
+
+    <h2>Трехмерное сканирование от "МИКРО" до "СРЕДНЕГО"</h2>
+
+    <div class="pixel-gallery">
+        <img src="images/sc1.PNG" alt="Pixel1" class="pixel-image">
         <img src="images/px2.png" alt="Pixel1" class="pixel-image">
         <img src="https://placehold.co/150x150/777/fff?text=Pixel+Art+3" alt="Пиксель 3" class="pixel-image">
         <img src="https://placehold.co/150x150/999/fff?text=Pixel+Art+4" alt="Пиксель 4" class="pixel-image">
@@ -145,6 +169,7 @@
 
 <footer>
     <p>&copy; 2025 AlexKo Artist. All rights reserved.</p>
+    <p>mail: ninznak@mail.ru</p>
 </footer>
 </body>
 </html>
