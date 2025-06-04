@@ -13,7 +13,6 @@
         }
 
         body {
-        /*background-color: #f0f0f0;*/
             background-color: #dce8cf;
             color: #333;
         }
@@ -32,9 +31,9 @@
         }
         h2 {
             text-align: center;
-            margin: 20px auto; /* auto по бокам + отступы сверху/снизу */
+            margin: 20px auto;
             padding: 0;
-            width: 100%; /* Занимает всю ширину родителя */
+            width: 100%;
         }
 
         /* Тело страницы */
@@ -57,14 +56,19 @@
             width: 250px;
             height: 250px;
             image-rendering: pixelated;
-            object-fit: cover; /* Вписывает целиком */
+            object-fit: cover;
             background-color: #f0f0f0;
             border: 3px solid #333;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s; /* Добавляем анимацию для тени */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Начальное состояние (прозрачная тень) */
         }
 
         .pixel-image:hover {
             transform: scale(1.1);
+            box-shadow:
+            0 0 10px rgba(255, 201, 44, 0.8),
+            0 0 20px rgba(0, 0, 0, 0.5),
+            0 0 30px rgba(0, 0, 0, 0.4); /* Повышение яркости тени многослойная */
         }
 
         .login-form {
@@ -132,23 +136,25 @@
 </header>
 
 <main>
+    <h2>Трехмерный скульптинг</h2>
     <div class="pixel-gallery">
-        <img src="images/px1.PNG" alt="Pixel1" class="pixel-image">
-        <img src="images/px2.png" alt="Pixel1" class="pixel-image">
+        <img src="images/1.jpeg" alt="Pixel1" class="pixel-image">
+        <img src="images/111.JPEG" alt="Pixel1" class="pixel-image">
         <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
-        <!--<img src="https://placehold.co/150x150/999/fff?text=Pixel+Art+4" alt="Пиксель 4" class="pixel-image">-->
-        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
-        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
-        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
+        <img src="images/22.png" alt="Pixel1" class="pixel-image">
+        <img src="images/4.png" alt="Pixel1" class="pixel-image">
+        <img src="images/6.jpeg" alt="Pixel1" class="pixel-image">
     </div>
 
     <h2>Трехмерное сканирование от "МИКРО" до "СРЕДНЕГО"</h2>
 
     <div class="pixel-gallery">
-        <img src="images/sc1.PNG" alt="Pixel1" class="pixel-image">
-        <img src="images/px2.png" alt="Pixel1" class="pixel-image">
-        <img src="https://placehold.co/150x150/777/fff?text=Pixel+Art+3" alt="Пиксель 3" class="pixel-image">
-        <img src="https://placehold.co/150x150/999/fff?text=Pixel+Art+4" alt="Пиксель 4" class="pixel-image">
+        <img src="images/s1.PNG" alt="Pixel1" class="pixel-image">
+        <img src="images/s2.JPEG" alt="Pixel1" class="pixel-image">
+        <img src="images/s3.JPEG" alt="Pixel1" class="pixel-image">
+        <img src="images/s4.JPEG" alt="Pixel1" class="pixel-image">
+        <img src="images/s5.JPEG" alt="Pixel1" class="pixel-image">
+        <img src="images/s6.PNG" alt="Pixel1" class="pixel-image">
     </div>
 
     <div class="login-form">
