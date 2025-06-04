@@ -3,158 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital World</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Courier New', monospace;
-        }
-
-        body {
-            background-color: #dce8cf;
-            color: #333;
-        }
-
-        /* Шапка (чердак) */
-        header {
-            background-color: #91a675;
-            color: #f3f6d4;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        h2 {
-            text-align: center;
-            margin: 20px auto;
-            padding: 0;
-            width: 100%;
-        }
-
-        /* Тело страницы */
-        main {
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding-bottom: 100px;
-        }
-
-        .pixel-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-
-        .pixel-image {
-            width: 250px;
-            height: 250px;
-            image-rendering: pixelated;
-            object-fit: cover;
-            background-color: #f0f0f0;
-            border: 3px solid #333;
-            transition: transform 0.3s, box-shadow 0.3s; /* Добавляем анимацию для тени */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0); /* Начальное состояние (прозрачная тень) */
-        }
-
-        .pixel-image:hover {
-            transform: scale(1.1);
-            box-shadow:
-            0 0 10px rgba(255, 201, 44, 0.8),
-            0 0 20px rgba(0, 0, 0, 0.5),
-            0 0 30px rgba(0, 0, 0, 0.4); /* Повышение яркости тени многослойная */
-        }
-
-        .login-form {
-            background-color: #eef3b8;
-            border: 3px solid #333;
-            padding: 20px;
-            margin-bottom: 40px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .login-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #333;
-            font-size: 1rem;
-        }
-
-        .login-btn {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            width: 100%;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .login-btn:hover {
-            background-color: #555;
-        }
-
-        /* Подвал */
-        footer {
-            background-color: #91a675;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Digital World - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
-    <h1>Добро пожаловать на сайт визитку</h1>
-    <h1>трехмерного моделирования и скульптинга!</h1>
+    <h1><a href="index.html">Добро пожаловать на сайт-визитку</a></h1>
+    <h1><a href="about.html">трёхмерного моделирования и скульптинга!</a></h1>
 </header>
 
 <main>
-    <h2>Трехмерный скульптинг</h2>
+    <h2><a href="sculpting.html">Трёхмерный скульптинг</a></h2>
     <div class="pixel-gallery">
-        <img src="images/1.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/111.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/pic1.jpg" alt="Pixel1" class="pixel-image">
-        <img src="images/22.PNG" alt="Pixel1" class="pixel-image">
-        <img src="images/4.PNG" alt="Pixel1" class="pixel-image">
-        <img src="images/6.JPG" alt="Pixel1" class="pixel-image">
+        <img src="images/1.JPEG" alt="3D скульптинг 1" class="pixel-image">
+        <img src="images/111.JPEG" alt="3D скульптинг 2" class="pixel-image">
+        <img src="images/pic1.jpg" alt="3D скульптинг 3" class="pixel-image">
+        <img src="images/22.PNG" alt="3D скульптинг 4" class="pixel-image">
+        <img src="images/4.PNG" alt="3D скульптинг 5" class="pixel-image">
+        <img src="images/6.JPG" alt="3D скульптинг 6" class="pixel-image">
     </div>
 
-    <h2>Трехмерное сканирование от "МИКРО" до "СРЕДНЕГО"</h2>
+    <h2><a href="scan.html">Трёхмерное сканирование от "МИКРО" до "СРЕДНЕГО"</a></h2>
 
     <div class="pixel-gallery">
-        <img src="images/s1.png" alt="Pixel1" class="pixel-image">
-        <img src="images/s2.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/s3.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/s4.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/s5.JPEG" alt="Pixel1" class="pixel-image">
-        <img src="images/s6.png" alt="Pixel1" class="pixel-image">
+        <img src="images/s1.png" alt="3D сканирование 1" class="pixel-image">
+        <img src="images/s2.JPEG" alt="3D сканирование 2" class="pixel-image">
+        <img src="images/s3.JPEG" alt="3D сканирование 3" class="pixel-image">
+        <img src="images/s4.JPEG" alt="3D сканирование 4" class="pixel-image">
+        <img src="images/s5.JPEG" alt="3D сканирование 5" class="pixel-image">
+        <img src="images/s6.png" alt="3D сканирование 6" class="pixel-image">
     </div>
 
     <div class="login-form">
