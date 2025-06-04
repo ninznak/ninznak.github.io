@@ -125,6 +125,49 @@ main {
     background-color: #555;
 }
 
+/* Стили для боковых декоративных изображений */
+.side-decoration {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 300px; /* Ширина изображений */
+    z-index: -1; /* Чтобы контент был поверх */
+    pointer-events: none; /* Чтобы не мешали взаимодействию */
+}
+
+.left-decoration {
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, transparent 100%),
+    url('images/left.png') left center no-repeat;
+    background-size: cover;
+}
+
+.right-decoration {
+    right: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, transparent 100%),
+    url('images/right.png') right center no-repeat;
+    background-size: cover;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 1200px) {
+    .side-decoration {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-decoration {
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .side-decoration {
+        display: none; /* Полностью скрываем на маленьких экранах */
+    }
+}
+
 /* Подвал */
 footer {
     background-color: #91a675;
