@@ -145,7 +145,7 @@ main {
 .right-decoration {
     right: 0;
     background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, transparent 100%),
-    url('images/right1.png') right center no-repeat;
+    url('images/right11.png') right center no-repeat;
     background-size: cover;
 }
 
