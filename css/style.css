@@ -138,14 +138,14 @@ main {
 .left-decoration {
     left: 0;
     background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, transparent 100%),
-    url('images/left.png') left center no-repeat;
+    url('images/left11.png') left center no-repeat;
     background-size: cover;
 }
 
 .right-decoration {
     right: 0;
     background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, transparent 100%),
-    url('images/right.png') right center no-repeat;
+    url('images/right1.png') right center no-repeat;
     background-size: cover;
 }
 
