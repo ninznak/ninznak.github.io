@@ -11,12 +11,13 @@ body {
     color: #333;
 }
 
-/* Шапка (чердак) */
+/* Шапка (header) */
 header {
     background-color: #91a675;
     color: #f3f6d4;
     padding: 20px;
     text-align: center;
+    transition: background 0.3s ease;
 }
 
 header h1 {
@@ -44,7 +45,7 @@ h2 {
     width: 100%;
 }
 
-/* Тело страницы */
+/* Основное содержимое (main) */
 main {
     padding: 20px;
     max-width: 1000px;
@@ -52,6 +53,7 @@ main {
     padding-bottom: 100px;
 }
 
+/* Галерея изображений */
 .pixel-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +81,7 @@ main {
     0 0 30px rgba(0, 0, 0, 0.4);
 }
 
+/* Форма входа */
 .login-form {
     background-color: #eef3b8;
     border: 3px solid #333;
@@ -125,31 +128,45 @@ main {
     background-color: #555;
 }
 
-/* Стили для боковых декоративных изображений */
+/* Боковые декоративные элементы */
 .side-decoration {
     position: fixed;
     top: 0;
     height: 100vh;
-    width: 300px; /* Ширина изображений */
-    z-index: -1; /* Чтобы контент был поверх */
-    pointer-events: none; /* Чтобы не мешали взаимодействию */
+    width: 300px;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .left-decoration {
     left: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, transparent 100%),
+    background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 100%),
     url('images/left11.png') left center no-repeat;
     background-size: cover;
 }
 
 .right-decoration {
     right: 0;
-    background: linear-gradient(to left, rgba(0,0,0,0.3) 0%, transparent 100%),
+    background:
+    linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, transparent 100%),
     url('images/right11.png') right center no-repeat;
     background-size: cover;
 }
 
-/* Адаптация для мобильных устройств */
+/* Подвал (footer) */
+footer {
+    background-color: #91a675;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+/* Адаптация под разные экраны */
 @media (max-width: 1200px) {
     .side-decoration {
         width: 200px;
@@ -163,18 +180,29 @@ main {
 }
 
 @media (max-width: 576px) {
+/* Скрываем боковые элементы */
     .side-decoration {
-        display: none; /* Полностью скрываем на маленьких экранах */
+        display: none;
     }
-}
 
-/* Подвал */
-footer {
-    background-color: #91a675;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* Заменяем фон body на картинку
+    body {
+        background-image: url('images/mobile_bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    } */
+
+    /* Заменяем фон header на картинку */
+    header {
+        background-image: url('images/header-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Заменяем фон footer на картинку */
+    footer {
+        background-image: url('images/footer-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 }
